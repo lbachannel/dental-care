@@ -20,6 +20,25 @@ a {
     text-decoration: none;
 }
 
+.btn {
+    --height: 60px;
+    display: inline-block;
+    min-width: 205px;
+    height: var(--height);
+    padding: 0 20px;
+    border-radius: 99px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: var(--height); 
+    color: #fff;
+    background: #2e80ce;
+    text-align: center;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
 .container {
     width: 1170px;
     max-width: calc(100% - 48px);
@@ -30,6 +49,7 @@ a {
 .header {
     min-height: 100vh;
     background: var(--header-bg);
+    padding-top: 30px;
 }
 
 .logo {
@@ -75,4 +95,44 @@ a {
 .logo__brand--small {
     font-size: 1.2em;
     font-weight: 300;
+}
+
+/* Header-top */
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar__list {
+    display: flex;
+}
+
+.action__login,
+.navbar__link {
+    padding: 4px 21px;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #c9d2da;
+}
+
+.navbar__link:hover,
+.navbar__link--active {
+    text-shadow: 1px 0 0 currentColor;
+    color: #fff;
+}
+
+.navbar__link--active::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #fff;
+    margin-right: 8px;
+}
+
+.action__signup {
+    --height: 44px;
+    min-width: 104px;
 }
