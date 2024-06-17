@@ -16,6 +16,11 @@ body {
 }
 
 /* Common */
+input, textarea, select, button {
+    font-family: inherit;
+    font-size: inherit;
+}
+
 .control {
     display: flex;
     column-gap: 18px;
@@ -73,6 +78,7 @@ a {
     min-width: 205px;
     height: var(--height);
     padding: 0 20px;
+    border: 1px solid #2e80ce;
     border-radius: 99px;
     font-size: 1.6rem;
     font-weight: 400;
@@ -84,6 +90,7 @@ a {
 
 .btn:hover {
     opacity: 0.9;
+    cursor: pointer;
 }
 
 .container {
@@ -134,6 +141,7 @@ a {
 
 .logo__brand {
     display: block;
+    font-family: Sora, sans-serif;
     font-size: 1.8em;
     font-weight: 400;
     color: #fff;
@@ -678,4 +686,116 @@ a {
     max-width: 617px;
     margin: 18px auto 38px;
     font-size: 1.6rem;
+}
+
+/* Footer */
+.footer {
+    background: #10375c;
+    padding-top: 100px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.footer__row {
+    display: grid;
+    grid-template-columns: 1fr 0.4fr 0.4fr 1fr;
+    column-gap: 78px;
+}
+
+.footer__desc {
+    margin-top: 20px;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #a9b3bb;
+}
+
+.footer__heading {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #fff;
+}
+
+.footer__list {
+    margin-bottom: 28px;
+}
+
+.footer__link {
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #a9b3bb;
+    white-space: nowrap;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+.footer__item {
+    margin-bottom: 10px;
+}
+
+.footer__social {
+    display: flex;
+    column-gap: 10px;
+}
+
+.footer__social-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2E80CE;
+    transition: 0.25s;
+    margin-bottom: 28px;
+}
+
+.footer__social-btn:hover {
+    color: #fff;
+    background: #2E80CE;
+}
+
+.footer-form {
+    margin-top: 10px;
+    display: flex;
+    column-gap: 12px;
+}
+
+.footer-form__input {
+    width: 212px;
+    height: 46px;
+    outline: none;
+    border: 1px solid #406181;
+    border-radius: 4px;
+    background: transparent;
+    padding: 0 10px;
+    color: #9ca8b1;
+}
+
+.footer-form__input::placeholder {
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #9ca8b1;
+}
+
+.footer-form__submit {
+    --height: 46px;
+    min-width: 108px;
+    border-radius: 4px;
+    font-size: 1.4rem;
+}
+
+.footer__copyright {
+    border-top: 1px solid #406181;
+    padding: 28px 0 42px;
+}
+
+.footer__copyright-text {
+    font-size: 1.4rem;
+    line-height: 1.86;
+    text-align: center;
+    color: #aab3ba;
 }
